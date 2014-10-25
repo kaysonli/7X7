@@ -20,11 +20,29 @@ module.exports = function(grunt) {
         src: 'build/script.js',
         dest: 'build/script.min.js'
       }
+    },
+    watch: {
+      scripts: {
+        files: 'src/*.js',
+        tasks: ['default']
+      }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 4000,
+          keepalive: true,
+          base: '',
+          hostname: '*'
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // 默认被执行的任务列表。
   grunt.registerTask('default', ['concat', 'uglify']);
