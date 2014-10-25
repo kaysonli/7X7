@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<meta name="keyword" content="7x7消除网页版,7x7消除微信小游戏,网页版7x7消除,在线版7x7消除">
+    <meta name="description" content="7x7消除网页版，可在电脑和移动设备的浏览器中运行。也可以分享到微信朋友圈，直接在微信里玩。">
+	<title>7X7消除，看谁消到最后！</title>
+	<link rel="stylesheet" href="src/style.css">
+	<script src="build/script.min.js?v=1" type="text/javascript"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="info">
+			<div class="left">
+				<img src="images/icon.png" class="icon">
+				<div class="level">LEVEL <label id="level">1</label></div>
+			</div>
+			<div class="right">
+				<div class="move-anywhere">
+					<img class="off" src="images/move-anywhere.png" alt="check to move anywhere" />
+					<img class="on" style="display:none;" src="images/move-anywhere-checked.png" alt="move anywhere" />
+				</div>
+				<div>
+					<label id="anywhere-moves">2</label>
+				</div>
+			</div>
+		</div>
+		<div class="tip clear"><label id="movesToNextLevel">40</label> LINES TO NEXT LEVEL</div>
+		<div id="score-area" class="clear">
+			<div class="left">
+				<div class="gainings">SCORE</div>
+				<div id="score" class="gainings-result">0</div>
+				<div class="gainings">COMBO</div>
+				<div id="combo" class="gainings-result">0</div>
+			</div>
+			<div class="right" id="coming-cells">
+				<div class="up-next">UP NEXT</div>
+				<div class="clear">
+					<span class="grid_item" index="0"></span>
+					<span class="grid_item" index="1"></span>
+					<span class="grid_item" index="2"></span>
+				</div>
+				<div class="clear">
+					<span class="grid_item" index="3"></span>
+					<span class="grid_item" index="4"></span>
+					<span class="grid_item" index="5"></span>
+				</div>
+				
+			</div>
+		</div>
+		<div id="board" class="clear"></div>
+		<div style="font-size:9px; font-family: 宋体;">玩法：选中方块，放到合适的格子，横、竖、斜方向相同颜色超过3个就会消除并得分。每次移动会产生新的方块。当所有格子都被填满，Game Over！叫上你的小伙伴们来PK吧！</div>
+	</div>
+	<div style="" id="game-over" jqmoldstyle="block">
+		<p style=" text-align:right; padding-right:50px;">
+			<img src="images/share.png?3" width="204"></p>
+		<div style="width:80%;height:250px; margin: 0px auto; background:rgba(0,0,0,0.3);border:1px rgba(255,255,255,0.3) solid;border-radius:6px;padding:15px; text-align:center; position:relative;"> 
+			<i style="position:absolute; background:url(images/close.png); width:29px;height:29px; background-size:29px 29px; top:-10px;right:-14px;" id="restart"></i>
+			<center style="line-height:25px;font-size:20px;margin-top:20px;color:#eee;" 
+			id="result_content">
+				<div class="title"></div>
+				<div class="gainings">历史最高分</div>
+				<div class="gainings-result" id="record"></div>
+				<div class="gainings">得分</div>
+				<div class="gainings-result" id="final-score"></div>
+				<div class="gainings">最大连招数</div>
+				<div class="gainings-result" id="final-combos"></div>
+				<div class="gainings">回合数</div>
+				<div class="gainings-result" id="turns"></div>
+			</center>
+
+		</div>
+	</div>
+	<div id="qrcode">
+		
+	</div>
+	<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=0&amp;pos=right&amp;uid=1185399" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=377345"></script>
+<!-- Baidu Button END -->
+	<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2e55c5eed933c35802c1dfca5e5e2166' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

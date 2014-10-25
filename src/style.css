@@ -1,0 +1,156 @@
+div {
+	font-family: 黑体;
+}
+.bold {
+	font-weight: bold;
+}
+#board {
+	/* width: 100%;
+	*/
+	/* height: 550px;
+	*/
+	margin: 0 auto;
+}
+.level {
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px 0px;
+}
+.tip {
+	font-weight: bold;
+}
+#container {
+	/* width: 100%;
+	*/
+	/* margin: 0 auto;
+	*/
+	background-color: #eee;
+}
+.container-mobile {
+	width: 100%;
+}
+.container-desktop {
+	width: 560px;
+	margin: 0 auto;
+}
+#score-area {
+	height: 120px;
+}
+#score-area .left {
+	float: left;
+	margin-left: 10px;
+	width: 120px;
+}
+#score-area .right {
+	float: right;
+	margin-right: 10px;
+}
+#info {
+	height: 70px;
+	border-bottom: 2px solid #ccc;
+}
+img.icon {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin: 5px 0 0 5px;
+}
+.grid_item_inner.unreachable {
+	background-image: url(../images/dead.png);
+	background-size: 100%, 100%;
+}
+#info .left {
+	float: left;
+	width: 200px;
+}
+#info .level {
+	margin-left: 65px;
+}
+#info .right {
+	float: right;
+	width: 100px;
+	/* height: 69px;
+	*/
+}
+.move-anywhere {
+	float: left;
+	/* line-height: 69px;
+	*/
+}
+#anywhere-moves {
+	margin-left: 5px;
+}
+.move-anywhere img {
+	vertical-align: middle;
+	width: 52px;
+	height: 52px;
+}
+.clear {
+	clear: both;
+}
+.grid_item {
+	display: block;
+	border: 1px solid #fff;
+	background-color: #ddd;
+	float: left;
+	line-height: 12px;
+	font-size: 10px;
+}
+.grid_item_inner {
+	display: block;
+	background-color: #ddd;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+#coming-cells .grid_item {
+	border-color: #ccc;
+	width: 48px;
+	height: 48px;
+	margin-left: 2px;
+	margin-top: 2px;
+}
+.selected {
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px rgb(255, 68, 68);
+}
+#game-over {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+	display: none;
+	background: rgba(0, 0, 0, 0.9);
+}
+#game-over .content {
+	background-color: #fff;
+	width: 300px;
+	position: absolute;
+	margin: 0 auto;
+}
+.gainings {
+	font-size: 16px;
+}
+.gainings-result {
+	font-size: 30px;
+}
+#combo::after {
+	content: 'X';
+}
+#qrcode {
+	width: 200px;
+	height: 200px;
+	display: none;
+	position: fixed;
+	left: 10px;
+	top: 100px;
+}
+#qrcode img {
+	width: 100%;
+	height: 100%;
+}
+#bdshare {
+	display: none;
+}
